@@ -62,11 +62,13 @@ public class Ball {
                 dy *= -1;
                 y = prevy;
                 newDirection();
+                Draw.offset = random.nextInt(60) - 30;
             }
             if (checkYNegative(p) && checkXPositive(p) && checkXNegative(p) && y > p.getY() - p.getHeight() / 2 - size / 2) {
                 dy *= -1;
                 y = prevy;
                 newDirection();
+                Draw.offset = random.nextInt(60) - 30;
             }
         }
         return 0;
